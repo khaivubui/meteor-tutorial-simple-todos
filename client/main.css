@@ -1,0 +1,154 @@
+/* CSS declarations go here */
+body {
+  font-family: sans-serif;
+  background-color: white;
+  background-attachment: fixed;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  padding: 0 15px;
+  margin: 0;
+
+  font-size: 18px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  background: white;
+  box-shadow: 0px 0px 25px #AAA;
+}
+
+.task-container {
+  height: 60vh;
+  overflow: scroll;
+}
+
+header {
+  background: #2980b9;
+  padding: 20px 15px 10px 15px;
+  position: relative;
+  text-align: center;
+}
+
+#login-buttons {
+  display: block;
+  color: white;
+}
+
+h1 {
+  color: white;
+  font-size: 1.5em;
+  margin: 0;
+  margin-bottom: 10px;
+  display: inline-block;
+  margin-right: 1em;
+  font-weight: 100;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  text-transform: uppercase;
+}
+
+form {
+  margin-top: 10px;
+  margin-bottom: -10px;
+  position: relative;
+}
+.hide-completed input {
+  box-sizing: border-box;
+  margin: 20px 20px 0px 20px;
+  padding: 0;
+}
+
+.settings-container {
+  margin: 0;
+  padding: 0 0 15px 0;
+  background-color: #2980b9;
+  color: white;
+}
+
+.hide-completed {
+  margin: 0;
+  padding: 0;
+  display: inline;
+  font-size: 0.7em;
+}
+
+.new-task input {
+  box-sizing: border-box;
+  margin: 20px;
+  margin-top: 10px;
+  padding: 0px;
+  border: none;
+  border-bottom: 1px solid gray;
+  border-radius: 0px;
+  width: 50%;
+  min-width: 200px;
+  font-size: 1em;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  background: white;
+}
+
+.delete {
+  float: right;
+  font-weight: bold;
+  background: none;
+  font-size: 0.8em;
+  border: none;
+  position: relative;
+}
+
+.delete:hover {
+  color: red;
+}
+
+li {
+  position: relative;
+  list-style: none;
+  padding: 15px 20px;
+  border-bottom: #eee solid 1px;
+}
+
+li .text {
+  margin-left: 10px;
+}
+
+li.checked {
+  color: #888;
+}
+
+li.checked .text {
+  text-decoration: line-through;
+}
+
+li.private {
+  background: #eee;
+  border-color: #ddd;
+}
+
+.toggle-private {
+  margin-left: 5px;
+}
+
+@media (max-width: 600px) {
+  li {
+    padding: 12px 15px;
+  }
+
+  .search {
+    width: 150px;
+    clear: both;
+  }
+
+  .new-task input {
+    padding-bottom: 5px;
+  }
+}
